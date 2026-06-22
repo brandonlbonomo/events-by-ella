@@ -8,7 +8,7 @@ export default defineConfig({
         main: resolve(__dirname, 'index.html'),
         services: resolve(__dirname, 'services.html'),
         portfolio: resolve(__dirname, 'portfolio.html'),
-        gallery: resolve(__dirname, 'gallery.html'),
+        gallery: resolve(__dirname, 'gallery.html'), // redirect to portfolio
         about: resolve(__dirname, 'about.html'),
         blog: resolve(__dirname, 'blog/index.html'),
         'blog-bridal-shower': resolve(__dirname, 'blog/how-to-plan-a-bridal-shower.html'),
