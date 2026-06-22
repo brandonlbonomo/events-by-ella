@@ -55,8 +55,9 @@
   <main id="main">
     <!-- Page Header -->
     <section class="page-header">
-      <h1>Get in Touch</h1>
-      <p>We&rsquo;d love to hear about your event. Tell us what you&rsquo;re envisioning and we&rsquo;ll take it from there.</p>
+      <p class="section-eyebrow">Get in Touch</p>
+      <h1>Let&rsquo;s Build Something Beautiful Together</h1>
+      <p>Whether you have a complete vision or just the spark of an idea, we&rsquo;d love to hear from you</p>
     </section>
 
     <!-- Contact Section -->
@@ -106,14 +107,22 @@
 
         <!-- Contact Info -->
         <div class="contact-info">
-          <h3>Let&rsquo;s Start a Conversation</h3>
-          <p>Whether you have a detailed vision or just a spark of an idea, we&rsquo;re here to help you bring it to life. Fill out the form and we&rsquo;ll get back to you within 24&ndash;48 hours.</p>
+          <h3>Every Great Celebration Starts with a Conversation</h3>
+          <p>There are no wrong answers here. You don&rsquo;t need a Pinterest board or a color palette picked out. You might know exactly what you want, or you might just know a feeling you&rsquo;re going for. Either way, we want to hear it. Fill out the form and we&rsquo;ll get back to you within 24&ndash;48 hours to start turning your ideas into something real.</p>
 
           <div class="contact-detail">
             <div class="contact-detail-icon" aria-hidden="true">&#9993;</div>
             <div>
               <h4>Email</h4>
-              <p>hello@eventsbyella.com</p>
+              <p>infoeventsbyella@gmail.com</p>
+            </div>
+          </div>
+
+          <div class="contact-detail">
+            <div class="contact-detail-icon" aria-hidden="true">&#9742;</div>
+            <div>
+              <h4>Phone</h4>
+              <p>516.712.5890</p>
             </div>
           </div>
 
@@ -121,7 +130,7 @@
             <div class="contact-detail-icon" aria-hidden="true">&#9873;</div>
             <div>
               <h4>Location</h4>
-              <p>Long Island, New York<br>Serving all 50 states</p>
+              <p>Long Island, New York<br><em>Serving all 50 states &mdash; because great decor shouldn&rsquo;t have a zip code</em></p>
             </div>
           </div>
 
@@ -129,7 +138,7 @@
             <div class="contact-detail-icon" aria-hidden="true">&#128197;</div>
             <div>
               <h4>Availability</h4>
-              <p>Booking weddings, showers, and celebrations year-round. We recommend reaching out 3&ndash;6 months in advance for larger events.</p>
+              <p>We book celebrations year-round. For weddings and larger events, we recommend reaching out 3&ndash;6 months in advance. For showers and intimate gatherings, 6&ndash;8 weeks gives us plenty of time to work our magic.</p>
             </div>
           </div>
         </div>
@@ -168,11 +177,30 @@
   </footer>
 
   <script>
+    // Mobile nav toggle
     const toggle = document.querySelector('.nav-toggle');
     const navLinks = document.querySelector('.nav-links');
     toggle.addEventListener('click', () => {
       const isOpen = navLinks.classList.toggle('open');
       toggle.setAttribute('aria-expanded', isOpen);
+    });
+
+    // Scroll reveal animation
+    const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+    document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => observer.observe(el));
+
+    // Nav shadow on scroll
+    const nav = document.querySelector('.site-nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 50);
     });
   </script>
 </body>

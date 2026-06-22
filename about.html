@@ -56,8 +56,9 @@
 
     <!-- Page Header -->
     <section class="page-header">
-      <h1>Our Story</h1>
-      <p>A mother-daughter team with a passion for creating unforgettable celebrations</p>
+      <p class="section-eyebrow">Our Story</p>
+      <h1>A Mother &amp; Daughter, Building Beautiful Things</h1>
+      <p>What started as a shared love of celebrations became a studio, a business, and a way of life</p>
     </section>
 
     <!-- About Story -->
@@ -69,10 +70,11 @@
           </div>
           <div class="about-text">
             <h2>Meet Carolyn &amp; Gabriella</h2>
-            <p>Events by Ella was born from a simple love of bringing people together. Carolyn Azzariti and her daughter Gabriella started out doing what they loved most &mdash; planning parties, showers, and weddings for family and friends.</p>
-            <p>What began as a hobby quickly became something more. Venues took notice of their eye for detail and their ability to transform any space, and asked to work with them. They jumped at the opportunity.</p>
-            <p>Today, Events by Ella is a full-service event planning company headquartered on Long Island, New York, serving clients in all 50 states. Everything they do is driven by a belief that celebrations should feel personal, intentional, and beautiful &mdash; and that the details matter most.</p>
-            <p>Nearly everything they create is handmade and crafted in house. From centerpieces to backdrops, every piece of decor is designed and built by their team, giving each event a one-of-a-kind feel that can&rsquo;t be replicated.</p>
+            <p class="text-italic-accent">The hands and hearts behind every celebration</p>
+            <p>Events by Ella was born the way the best things usually are &mdash; from love, not from a business plan. Carolyn Azzariti and her daughter Gabriella started out doing what came naturally to them: planning celebrations for the people they cared about most. Birthday parties for friends. A bridal shower for a cousin. A baby shower that turned out so beautiful, guests started asking, &ldquo;Who did this?&rdquo;</p>
+            <p>What they didn&rsquo;t realize at first was that their eye for detail &mdash; the way Carolyn could envision an entire room from a single color swatch, the way Gabriella could hand-letter a welcome sign that looked like it belonged in a gallery &mdash; was something rare. Venues on Long Island took notice and asked to collaborate. Word spread. The hobby became a calling.</p>
+            <p>Today, Events by Ella is a full-service event planning company headquartered on Long Island, New York, serving clients in all 50 states. But the heart of it has never changed. Carolyn and Gabriella still design every concept personally. They still build nearly everything by hand in their studio &mdash; from floral centerpieces to custom backdrops to hand-painted signage. They still treat every celebration as if it were for someone in their own family.</p>
+            <p>Because to them, that&rsquo;s exactly what it feels like.</p>
           </div>
         </div>
       </div>
@@ -81,21 +83,22 @@
     <!-- Values -->
     <section class="section section-blush">
       <div class="container">
-        <div class="section-header">
+        <div class="section-header reveal">
+          <p class="section-eyebrow">Our Values</p>
           <h2>What We Believe In</h2>
         </div>
-        <div class="about-values">
-          <div class="value-card">
+        <div class="about-values reveal-stagger">
+          <div class="value-card reveal">
             <h3>Handcrafted, Always</h3>
-            <p>We believe in the beauty of handmade. Nearly everything we create is built in house, giving each event a truly personal touch.</p>
+            <p>In a world of mass-produced party supplies and catalog decor, we choose a different path. Nearly everything we create is built in our studio, by our hands. We believe the difference between a nice event and an unforgettable one lives in the details that were made with care &mdash; and guests can feel that difference the moment they walk in.</p>
           </div>
-          <div class="value-card">
+          <div class="value-card reveal">
             <h3>Every Detail Matters</h3>
-            <p>From the table settings to the timeline, we obsess over the details so you don&rsquo;t have to.</p>
+            <p>The way a napkin is folded. The exact shade of gold on a place card. The height of a centerpiece relative to the person sitting beside it. We obsess over the details most people never think about &mdash; because those invisible choices are what make the visible ones feel so right.</p>
           </div>
-          <div class="value-card">
-            <h3>Made for You</h3>
-            <p>No two events are alike. We design every celebration from scratch to reflect your story and style.</p>
+          <div class="value-card reveal">
+            <h3>Made for You, and Only You</h3>
+            <p>No two families are the same. No two love stories are the same. So no two celebrations should be the same. We design every event from scratch, drawn from your story, your style, your personality. What we build for you will never exist again &mdash; and that&rsquo;s the whole point.</p>
           </div>
         </div>
       </div>
@@ -103,8 +106,8 @@
 
     <!-- CTA Banner -->
     <section class="cta-banner">
-      <h2>Let&rsquo;s Plan Your Next Celebration</h2>
-      <p>Whether it&rsquo;s an intimate gathering or a grand event, we&rsquo;d love to bring your vision to life.</p>
+      <h2>Let&rsquo;s Build Something Beautiful Together</h2>
+      <p>Whether it&rsquo;s an intimate shower or a grand reception, every detail will be made with love &mdash; because your celebration deserves nothing less.</p>
       <a href="/contact.html" class="btn btn-primary">Get in Touch</a>
     </section>
 
@@ -147,6 +150,24 @@
     toggle.addEventListener('click', () => {
       const isOpen = navLinks.classList.toggle('open');
       toggle.setAttribute('aria-expanded', isOpen);
+    });
+
+    // Scroll reveal animation
+    const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+    document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => observer.observe(el));
+
+    // Nav shadow on scroll
+    const nav = document.querySelector('.site-nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 50);
     });
   </script>
 </body>

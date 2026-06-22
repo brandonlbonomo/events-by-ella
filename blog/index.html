@@ -56,8 +56,9 @@
 
     <!-- Page Header -->
     <section class="page-header">
-      <h1>Our Blog</h1>
-      <p>Tips, inspiration, and behind-the-scenes looks at our favorite celebrations</p>
+      <p class="section-eyebrow">Our Blog</p>
+      <h1>Stories, Tips &amp; Inspiration</h1>
+      <p>Behind-the-scenes looks at our favorite celebrations, planning guides, and the ideas that inspire everything we create</p>
     </section>
 
     <!-- Blog Grid -->
@@ -66,21 +67,21 @@
         <div class="blog-grid">
 
           <!-- Blog Card 1 -->
-          <article class="blog-card">
-            <div class="blog-card-image">Blog post image</div>
-            <div class="blog-card-content">
-              <p class="blog-meta">Planning Tips &mdash; June 15, 2026</p>
+          <article class="blog-card reveal">
+            <div class="blog-card-image"><img src="/images/portfolio/miss-to-mrs-setup.jpg" alt="Miss to Mrs bridal shower setup with floral arch and vintage decor"></div>
+            <div class="blog-card-body">
+              <p class="blog-card-meta">Planning Tips &mdash; June 15, 2026</p>
               <h3><a href="/blog/how-to-plan-a-bridal-shower.html">How to Plan a Bridal Shower</a></h3>
-              <p>Planning a bridal shower can feel overwhelming, but with the right approach it becomes one of the most rewarding parts of the wedding journey. Here&rsquo;s our step-by-step guide.</p>
+              <p>From choosing a theme that feels like the bride to handmade details guests will talk about for years &mdash; our complete step-by-step guide to planning a bridal shower she&rsquo;ll never forget.</p>
               <a href="/blog/how-to-plan-a-bridal-shower.html" class="read-more">Read More</a>
             </div>
           </article>
 
           <!-- Blog Card 2 -->
-          <article class="blog-card">
-            <div class="blog-card-image">Blog post image</div>
-            <div class="blog-card-content">
-              <p class="blog-meta">Inspiration &mdash; June 8, 2026</p>
+          <article class="blog-card reveal">
+            <div class="blog-card-image"><img src="/images/portfolio/baby-shower-dessert-table.jpg" alt="Baby shower dessert table with teddy bear cake and hand-decorated cookies"></div>
+            <div class="blog-card-body">
+              <p class="blog-card-meta">Inspiration &mdash; June 8, 2026</p>
               <h3><a href="/blog/baby-shower-themes-we-love.html">Baby Shower Themes We Love</a></h3>
               <p>From woodland wonderlands to modern minimalist, here are the baby shower themes we can&rsquo;t stop thinking about &mdash; plus tips for pulling them off.</p>
               <a href="/blog/baby-shower-themes-we-love.html" class="read-more">Read More</a>
@@ -88,10 +89,10 @@
           </article>
 
           <!-- Blog Card 3 -->
-          <article class="blog-card">
-            <div class="blog-card-image">Blog post image</div>
-            <div class="blog-card-content">
-              <p class="blog-meta">DIY &amp; Decor &mdash; June 1, 2026</p>
+          <article class="blog-card reveal">
+            <div class="blog-card-image"><img src="/images/portfolio/floral-dress-mannequin.jpg" alt="Handcrafted floral dress on wire mannequin as wedding decor"></div>
+            <div class="blog-card-body">
+              <p class="blog-card-meta">DIY &amp; Decor &mdash; June 1, 2026</p>
               <h3><a href="/blog/diy-wedding-decor-ideas.html">DIY Wedding Decor Ideas You Can Actually Pull Off</a></h3>
               <p>You don&rsquo;t need a massive budget to have stunning wedding decor. These handmade ideas add personal touches that guests will remember.</p>
               <a href="/blog/diy-wedding-decor-ideas.html" class="read-more">Read More</a>
@@ -148,6 +149,24 @@
     toggle.addEventListener('click', () => {
       const isOpen = navLinks.classList.toggle('open');
       toggle.setAttribute('aria-expanded', isOpen);
+    });
+
+    // Scroll reveal animation
+    const observerOptions = { threshold: 0.1, rootMargin: '0px 0px -50px 0px' };
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, observerOptions);
+    document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => observer.observe(el));
+
+    // Nav shadow on scroll
+    const nav = document.querySelector('.site-nav');
+    window.addEventListener('scroll', () => {
+      nav.classList.toggle('scrolled', window.scrollY > 50);
     });
   </script>
 </body>
