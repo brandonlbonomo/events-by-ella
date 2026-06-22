@@ -6,6 +6,11 @@
     <priority>1.0</priority>
   </url>
   <url>
+    <loc>https://eventsbyella.com/process.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://eventsbyella.com/services.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.9</priority>
@@ -16,9 +21,24 @@
     <priority>0.9</priority>
   </url>
   <url>
+    <loc>https://eventsbyella.com/partners.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eventsbyella.com/reviews.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
     <loc>https://eventsbyella.com/about.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eventsbyella.com/contact.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
   <url>
     <loc>https://eventsbyella.com/blog/</loc>
@@ -36,13 +56,53 @@
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://eventsbyella.com/blog/diy-wedding-decor-ideas.html</loc>
+    <loc>https://eventsbyella.com/blog/diy-decor-ideas-for-any-celebration.html</loc>
     <changefreq>monthly</changefreq>
     <priority>0.7</priority>
   </url>
   <url>
-    <loc>https://eventsbyella.com/contact.html</loc>
+    <loc>https://eventsbyella.com/blog/choosing-the-perfect-event-color-palette.html</loc>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eventsbyella.com/blog/bridal-shower-games-guests-love.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eventsbyella.com/blog/baby-shower-planning-checklist.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eventsbyella.com/blog/creative-party-favor-ideas.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eventsbyella.com/blog/how-to-choose-the-right-event-venue.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eventsbyella.com/blog/balloon-garland-ideas.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eventsbyella.com/blog/sweet-sixteen-party-ideas.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eventsbyella.com/blog/backyard-party-ideas.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://eventsbyella.com/blog/why-hire-an-event-planner.html</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
   </url>
 </urlset>
