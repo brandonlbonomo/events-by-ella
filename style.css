@@ -333,6 +333,11 @@ p {
 }
 
 /* ===== PARTNERS (Instagram-style) ===== */
+.ig-embed-widget {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 .ig-partners {
   display: flex;
   flex-direction: column;
