@@ -55,6 +55,7 @@
 html {
   font-size: 16px;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -63,6 +64,7 @@ body {
   background-color: var(--color-cream);
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }
 
 img {
@@ -247,7 +249,11 @@ p {
   background: none;
   border: none;
   cursor: pointer;
-  padding: 0.5rem;
+  padding: 0.75rem;
+  min-width: 44px;
+  min-height: 44px;
+  align-items: center;
+  justify-content: center;
 }
 
 .nav-toggle span {
@@ -2098,11 +2104,15 @@ p {
   }
 
   .nav-toggle {
-    display: block;
+    display: flex;
   }
 
   .nav-links a {
     font-size: 0.9rem;
+    padding: 0.75rem 1rem;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
   }
 }
 
@@ -2353,6 +2363,37 @@ p {
   .blog-post {
     padding-left: 1.25rem;
     padding-right: 1.25rem;
+  }
+
+  /* Tap targets — minimum 44px for mobile */
+  .filter-btn {
+    padding: 0.65rem 1.2rem;
+    min-height: 44px;
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .view-btn {
+    padding: 0.6rem 1rem;
+    min-height: 44px;
+  }
+
+  .footer-links a {
+    padding: 0.4rem 0;
+    min-height: 44px;
+    display: flex;
+    align-items: center;
+  }
+
+  /* Prevent any element from exceeding viewport */
+  .ig-embed-widget iframe {
+    max-width: 100%;
+  }
+
+  .partner-header p,
+  .section-header p,
+  .page-header p {
+    max-width: 100%;
   }
 }
 
