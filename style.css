@@ -172,9 +172,9 @@ p {
   left: 0;
   right: 0;
   z-index: 1000;
-  background: rgba(253, 248, 244, 0.35);
-  backdrop-filter: blur(24px);
-  -webkit-backdrop-filter: blur(24px);
+  background: rgba(253, 248, 244, 0.18);
+  backdrop-filter: blur(30px);
+  -webkit-backdrop-filter: blur(30px);
   border-bottom: none;
   box-shadow: 0 1px 0 rgba(212, 165, 154, 0.12);
   height: var(--nav-height);
