@@ -269,9 +269,9 @@ p {
 
 .nav-toggle span {
   display: block;
-  width: 22px;
-  height: 1px;
-  background: var(--color-dusty-rose);
+  width: 26px;
+  height: 2px;
+  background: var(--color-charcoal);
   margin: 5px 0;
   transition: all 0.3s ease;
 }
@@ -2219,7 +2219,7 @@ p {
     --section-padding: 3rem 1.25rem;
     --section-padding-lg: 3.5rem 1.25rem;
     --section-padding-sm: 2.5rem 1.25rem;
-    --nav-height: 70px;
+    --nav-height: 110px;
   }
 
   h1 { font-size: clamp(1.8rem, 7vw, 2.6rem); }
@@ -2243,7 +2243,7 @@ p {
   }
 
   .nav-logo img {
-    height: 55px;
+    height: 95px;
   }
 
   /* Hero */
@@ -2559,7 +2559,7 @@ p {
 
 @media (max-width: 480px) {
   :root {
-    --nav-height: 60px;
+    --nav-height: 90px;
   }
 
   h1 { font-size: clamp(1.6rem, 8vw, 2.2rem); }
@@ -2571,7 +2571,7 @@ p {
   }
 
   .nav-logo img {
-    height: 45px;
+    height: 75px;
   }
 
   .hero {
