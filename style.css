@@ -184,10 +184,8 @@ p {
 }
 
 .nav-inner {
-  max-width: var(--container-max);
-  margin: 0 auto;
-  padding: 0 2rem;
   width: 100%;
+  padding: 0 3rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
