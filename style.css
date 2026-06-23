@@ -2193,11 +2193,20 @@ p {
   }
 
   .nav-links a {
-    font-size: 0.9rem;
+    font-family: var(--font-heading);
+    font-size: 1.1rem;
+    font-weight: 400;
+    letter-spacing: 0.1em;
     padding: 0.75rem 1rem;
     min-height: 44px;
     display: flex;
     align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgba(212, 165, 154, 0.1);
+  }
+
+  .nav-links a:last-child {
+    border-bottom: none;
   }
 
   .nav-links a + a::before {
@@ -2213,14 +2222,16 @@ p {
     --nav-height: 160px;
   }
 
-  h1 { font-size: clamp(1.6rem, 6vw, 2.4rem); }
-  h2 { font-size: clamp(1.4rem, 5vw, 2rem); }
-  h3 { font-size: clamp(1.1rem, 4vw, 1.5rem); }
-  h4 { font-size: 1.05rem; }
+  h1 { font-size: clamp(1.8rem, 7vw, 2.6rem); }
+  h2 { font-size: clamp(1.5rem, 5.5vw, 2.2rem); }
+  h3 { font-size: clamp(1.2rem, 4.5vw, 1.6rem); }
+  h4 { font-size: 1.15rem; }
 
   body {
-    font-size: 0.95rem;
-    line-height: 1.65;
+    font-size: 1rem;
+    font-weight: 300;
+    line-height: 1.75;
+    letter-spacing: 0.015em;
   }
 
   .container {
@@ -2239,22 +2250,24 @@ p {
   }
 
   .hero-content {
-    padding: 0 1rem;
+    padding: 0 0.75rem;
   }
 
   .hero p {
-    font-size: 1rem;
+    font-size: 1.05rem;
     margin-bottom: 2rem;
+    line-height: 1.7;
   }
 
   .hero-eyebrow {
-    font-size: 0.7rem;
-    letter-spacing: 0.12em;
+    font-size: 0.8rem;
+    letter-spacing: 0.18em;
     margin-bottom: 1rem;
   }
 
   .hero h1::after {
     margin: 1rem auto 0;
+    font-size: 0.75rem;
   }
 
   /* Page headers */
@@ -2266,7 +2279,11 @@ p {
   }
 
   .page-header p {
-    font-size: 1rem;
+    font-size: 1.05rem;
+  }
+
+  .page-header h1::after {
+    font-size: 0.75rem;
   }
 
   /* Section headers */
@@ -2275,11 +2292,23 @@ p {
   }
 
   .section-header p {
-    font-size: 0.95rem;
+    font-size: 1rem;
+  }
+
+  .section-header::after {
+    font-size: 0.75rem;
   }
 
   .section-eyebrow {
-    font-size: 0.7rem;
+    font-size: 0.75rem;
+    letter-spacing: 0.18em;
+  }
+
+  /* Buttons — dainty on mobile */
+  .btn {
+    font-size: 0.85rem;
+    letter-spacing: 0.12em;
+    padding: 0.9rem 2rem;
   }
 
   /* Feature cards */
@@ -2293,7 +2322,7 @@ p {
   }
 
   .feature-card p {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
   }
 
   /* Process steps */
@@ -2309,12 +2338,12 @@ p {
   .process-step-number {
     width: 44px;
     height: 44px;
-    font-size: 1rem;
+    font-size: 1.1rem;
     margin-bottom: 1rem;
   }
 
   .process-step p {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
   }
 
   /* Testimonials */
@@ -2333,7 +2362,7 @@ p {
   }
 
   .testimonial-card blockquote {
-    font-size: 0.95rem;
+    font-size: 1rem;
     margin-bottom: 1rem;
   }
 
@@ -2349,11 +2378,11 @@ p {
   }
 
   .service-content p {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
   }
 
   .service-tagline {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
   }
 
   .service-highlights {
@@ -2361,8 +2390,8 @@ p {
   }
 
   .service-tag {
-    font-size: 0.75rem;
-    padding: 0.3rem 0.75rem;
+    font-size: 0.8rem;
+    padding: 0.35rem 0.85rem;
   }
 
   /* About */
@@ -2372,7 +2401,7 @@ p {
   }
 
   .about-text p {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
   }
 
   .about-values {
@@ -2384,7 +2413,7 @@ p {
   }
 
   .value-card p {
-    font-size: 0.9rem;
+    font-size: 0.95rem;
   }
 
   /* Contact */
@@ -2408,11 +2437,11 @@ p {
   }
 
   .portfolio-caption h4 {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 
   .portfolio-caption p {
-    font-size: 0.85rem;
+    font-size: 0.9rem;
   }
 
   /* Blog */
@@ -2424,19 +2453,36 @@ p {
     padding: 1.25rem;
   }
 
+  .blog-card-meta {
+    font-size: 0.8rem;
+  }
+
+  .read-more {
+    font-size: 0.9rem;
+  }
+
   /* CTA banner */
   .cta-banner {
     padding: 3.5rem 1.25rem;
   }
 
   .cta-banner p {
-    font-size: 1rem;
+    font-size: 1.05rem;
+  }
+
+  .cta-banner h2::before {
+    font-size: 0.75rem;
   }
 
   /* Footer */
   .footer-inner {
     grid-template-columns: 1fr;
     gap: 1.5rem;
+    text-align: center;
+  }
+
+  .footer-brand p {
+    margin: 0 auto;
   }
 
   .site-footer {
@@ -2446,6 +2492,16 @@ p {
   .footer-bottom {
     margin-top: 2rem;
     padding-top: 1.5rem;
+    font-size: 0.8rem;
+  }
+
+  .footer-links h4 {
+    font-size: 0.85rem;
+    letter-spacing: 0.12em;
+  }
+
+  .footer-links a {
+    font-size: 0.95rem;
   }
 
   /* Blog post */
@@ -2454,17 +2510,23 @@ p {
     padding-right: 1.25rem;
   }
 
+  .blog-post-header h1::after {
+    font-size: 0.75rem;
+  }
+
   /* Tap targets — minimum 44px for mobile */
   .filter-btn {
     padding: 0.65rem 1.2rem;
     min-height: 44px;
     display: inline-flex;
     align-items: center;
+    font-size: 0.85rem;
   }
 
   .view-btn {
     padding: 0.6rem 1rem;
     min-height: 44px;
+    font-size: 0.8rem;
   }
 
   .footer-links a {
@@ -2472,6 +2534,7 @@ p {
     min-height: 44px;
     display: flex;
     align-items: center;
+    justify-content: center;
   }
 
   /* Prevent any element from exceeding viewport */
@@ -2491,7 +2554,13 @@ p {
     --nav-height: 120px;
   }
 
-  h1 { font-size: clamp(1.4rem, 7vw, 2rem); }
+  h1 { font-size: clamp(1.6rem, 8vw, 2.2rem); }
+  h2 { font-size: clamp(1.3rem, 6vw, 1.8rem); }
+
+  body {
+    font-size: 0.95rem;
+    line-height: 1.7;
+  }
 
   .hero {
     padding-top: calc(var(--nav-height) + 1.5rem);
@@ -2499,7 +2568,12 @@ p {
   }
 
   .hero-eyebrow {
-    font-size: 0.65rem;
+    font-size: 0.7rem;
+    letter-spacing: 0.15em;
+  }
+
+  .hero p {
+    font-size: 0.95rem;
   }
 
   .hero-buttons {
@@ -2511,7 +2585,8 @@ p {
     width: 100%;
     text-align: center;
     padding: 0.85rem 2rem;
-    font-size: 0.8rem;
+    font-size: 0.85rem;
+    letter-spacing: 0.1em;
   }
 
   .page-header {
@@ -2530,6 +2605,23 @@ p {
 
   .portfolio-item-image::before {
     display: none;
+  }
+
+  .section-eyebrow {
+    font-size: 0.7rem;
+    gap: 0.5rem;
+  }
+
+  .testimonial-card blockquote {
+    font-size: 0.95rem;
+  }
+
+  .cta-banner h2::before {
+    font-size: 0.7rem;
+  }
+
+  .footer-links h4 {
+    font-size: 0.8rem;
   }
 }
 
