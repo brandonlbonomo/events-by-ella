@@ -31,7 +31,7 @@
   --section-padding-lg: 8rem 2rem;
   --section-padding-sm: 4rem 2rem;
   --container-max: 1200px;
-  --nav-height: 140px;
+  --nav-height: 240px;
 
   /* Shadows */
   --shadow-subtle: 0 1px 3px rgba(58, 58, 58, 0.04), 0 1px 2px rgba(58, 58, 58, 0.06);
@@ -199,7 +199,7 @@ p {
 }
 
 .nav-logo img {
-  height: 120px;
+  height: 220px;
   width: auto;
 }
 
@@ -2003,7 +2003,7 @@ p {
 }
 
 .footer-brand .nav-logo img {
-  height: 140px;
+  height: 200px;
   width: auto;
 }
 
@@ -2118,7 +2118,7 @@ p {
     --section-padding: 3rem 1.25rem;
     --section-padding-lg: 3.5rem 1.25rem;
     --section-padding-sm: 2.5rem 1.25rem;
-    --nav-height: 64px;
+    --nav-height: 160px;
   }
 
   h1 { font-size: clamp(1.6rem, 6vw, 2.4rem); }
@@ -2136,7 +2136,7 @@ p {
   }
 
   .nav-logo img {
-    height: 90px;
+    height: 140px;
   }
 
   /* Hero */
@@ -2396,7 +2396,7 @@ p {
 
 @media (max-width: 480px) {
   :root {
-    --nav-height: 56px;
+    --nav-height: 120px;
   }
 
   h1 { font-size: clamp(1.4rem, 7vw, 2rem); }
