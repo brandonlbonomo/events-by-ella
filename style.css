@@ -194,15 +194,13 @@ p {
 }
 
 .nav-logo {
-  font-family: var(--font-heading);
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--color-charcoal);
-  letter-spacing: 0.02em;
+  display: flex;
+  align-items: center;
 }
 
-.nav-logo span {
-  color: var(--color-dusty-rose);
+.nav-logo img {
+  height: 50px;
+  width: auto;
 }
 
 .nav-links {
@@ -2000,10 +1998,13 @@ p {
 }
 
 .footer-brand .nav-logo {
-  color: var(--color-charcoal);
   margin-bottom: 1rem;
   display: inline-block;
-  font-size: 1.6rem;
+}
+
+.footer-brand .nav-logo img {
+  height: 60px;
+  width: auto;
 }
 
 .footer-brand p {
@@ -2134,8 +2135,8 @@ p {
     padding: 0 1.25rem;
   }
 
-  .nav-logo {
-    font-size: 1.3rem;
+  .nav-logo img {
+    height: 40px;
   }
 
   /* Hero */
