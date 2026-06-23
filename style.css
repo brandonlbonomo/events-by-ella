@@ -58,10 +58,13 @@ html {
 }
 
 body {
-  font-family: var(--font-body);
+  font-family: var(--font-heading);
   color: var(--color-charcoal);
   background-color: var(--color-cream);
-  line-height: 1.7;
+  line-height: 1.8;
+  font-size: 1.05rem;
+  font-weight: 300;
+  letter-spacing: 0.02em;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
 }
@@ -83,10 +86,10 @@ ul, ol {
 
 h1, h2, h3, h4 {
   font-family: var(--font-heading);
-  font-weight: 500;
+  font-weight: 400;
   line-height: 1.2;
   color: var(--color-charcoal);
-  letter-spacing: 0.01em;
+  letter-spacing: 0.03em;
 }
 
 h1 { font-size: clamp(2.2rem, 5vw, 3.8rem); }
@@ -266,9 +269,9 @@ p {
 
 .nav-toggle span {
   display: block;
-  width: 24px;
-  height: 2px;
-  background: var(--color-charcoal);
+  width: 22px;
+  height: 1px;
+  background: var(--color-dusty-rose);
   margin: 5px 0;
   transition: all 0.3s ease;
 }
@@ -352,12 +355,14 @@ p {
 }
 
 .hero-eyebrow {
-  font-size: 0.85rem;
-  font-weight: 600;
-  letter-spacing: 0.2em;
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 400;
+  letter-spacing: 0.25em;
   text-transform: uppercase;
   color: var(--color-dusty-rose);
   margin-bottom: 1.5rem;
+  font-style: italic;
 }
 
 .hero h1 {
@@ -395,10 +400,10 @@ p {
 .btn {
   display: inline-block;
   padding: 1rem 2.5rem;
-  font-family: var(--font-body);
-  font-size: 0.85rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 400;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
   border: none;
   border-radius: var(--radius-sm);
@@ -427,7 +432,7 @@ p {
 .btn-secondary {
   background: transparent;
   color: var(--color-pink-dark);
-  border: 2px solid var(--color-pink-dark);
+  border: 1px solid var(--color-pink-dark);
   box-shadow: none;
 }
 
@@ -495,9 +500,10 @@ p {
 }
 
 .section-eyebrow {
-  font-size: 0.8rem;
-  font-weight: 600;
-  letter-spacing: 0.15em;
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.2em;
   text-transform: uppercase;
   color: var(--color-dusty-rose);
   margin-bottom: 0.75rem;
@@ -505,6 +511,7 @@ p {
   align-items: center;
   justify-content: center;
   gap: 0.75rem;
+  font-style: italic;
 }
 
 .section-eyebrow::before,
@@ -618,8 +625,9 @@ p {
   background: linear-gradient(135deg, var(--color-pink), var(--color-pink-dark));
   color: var(--color-white);
   font-family: var(--font-heading);
-  font-size: 1.2rem;
-  font-weight: 700;
+  font-size: 1.3rem;
+  font-weight: 400;
+  font-style: italic;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -678,18 +686,22 @@ p {
 }
 
 .testimonial-card cite {
-  font-family: var(--font-body);
+  font-family: var(--font-heading);
   font-style: normal;
-  font-size: 0.85rem;
-  font-weight: 600;
+  font-size: 0.95rem;
+  font-weight: 400;
+  letter-spacing: 0.06em;
   color: var(--color-dusty-rose);
   display: block;
 }
 
 .cite-detail {
-  font-weight: 400;
+  font-family: var(--font-heading);
+  font-weight: 300;
+  font-style: italic;
   color: var(--color-warm-gray);
-  font-size: 0.8rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.04em;
   display: block;
   margin-top: 0.25rem;
 }
@@ -728,11 +740,12 @@ p {
 }
 
 .pull-quote cite {
-  font-family: var(--font-body);
+  font-family: var(--font-heading);
   font-style: normal;
-  font-size: 0.9rem;
+  font-size: 1rem;
   color: var(--color-dusty-rose);
-  font-weight: 500;
+  font-weight: 400;
+  letter-spacing: 0.06em;
 }
 
 /* ===== PARTNERS (Instagram embed) ===== */
@@ -800,9 +813,12 @@ p {
 }
 
 .ig-handle {
-  font-size: 0.85rem;
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  font-style: italic;
   color: var(--color-dusty-rose);
-  font-weight: 500;
+  font-weight: 400;
+  letter-spacing: 0.04em;
   margin-bottom: 0.4rem;
 }
 
@@ -814,7 +830,7 @@ p {
 
 .btn-sm {
   padding: 0.5rem 1.2rem;
-  font-size: 0.75rem;
+  font-size: 0.8rem;
 }
 
 .ig-grid {
@@ -975,8 +991,11 @@ p {
   background: rgba(212, 165, 154, 0.08);
   color: var(--color-pink-dark);
   border-radius: 20px;
-  font-size: 0.8rem;
-  font-weight: 500;
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 400;
+  font-style: italic;
+  letter-spacing: 0.04em;
   border: 1px solid rgba(212, 165, 154, 0.15);
   transition: all 0.3s var(--ease-elegant);
 }
@@ -1008,8 +1027,10 @@ p {
   background: transparent;
   border: 1px solid rgba(212, 165, 154, 0.18);
   border-radius: 20px;
-  font-family: var(--font-body);
-  font-size: 0.85rem;
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.06em;
   cursor: pointer;
   transition: all 0.3s var(--ease-elegant);
   color: var(--color-warm-gray);
@@ -1035,8 +1056,10 @@ p {
   background: transparent;
   border: 1px solid rgba(212, 165, 154, 0.15);
   border-radius: 20px;
-  font-family: var(--font-body);
-  font-size: 0.8rem;
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 400;
+  letter-spacing: 0.06em;
   cursor: pointer;
   transition: all 0.3s var(--ease-elegant);
   color: var(--color-warm-gray);
@@ -1174,14 +1197,16 @@ p {
 
 .portfolio-tag {
   display: inline-block;
-  font-size: 0.75rem;
-  font-weight: 500;
+  font-family: var(--font-heading);
+  font-size: 0.8rem;
+  font-weight: 400;
+  font-style: italic;
   color: var(--color-pink-dark);
   background: rgba(212, 165, 154, 0.08);
   padding: 0.25rem 0.75rem;
   border-radius: 12px;
   border: 1px solid rgba(212, 165, 154, 0.15);
-  letter-spacing: 0.03em;
+  letter-spacing: 0.04em;
 }
 
 /* ===== MASONRY VIEW (gallery toggle) ===== */
@@ -1380,10 +1405,13 @@ p {
 }
 
 .blog-card-meta {
-  font-size: 0.8rem;
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 400;
+  font-style: italic;
   color: var(--color-dusty-rose);
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  text-transform: none;
+  letter-spacing: 0.06em;
   margin-bottom: 0.75rem;
 }
 
@@ -1403,10 +1431,12 @@ p {
 }
 
 .read-more {
-  font-size: 0.85rem;
-  font-weight: 600;
+  font-family: var(--font-heading);
+  font-size: 0.95rem;
+  font-weight: 400;
+  font-style: italic;
   color: var(--color-pink);
-  text-transform: uppercase;
+  text-transform: none;
   letter-spacing: 0.08em;
   display: inline-block;
 }
@@ -1457,8 +1487,12 @@ p {
 }
 
 .blog-post-meta {
+  font-family: var(--font-heading);
+  font-style: italic;
+  font-weight: 400;
+  letter-spacing: 0.06em;
   color: var(--color-dusty-rose);
-  font-size: 0.9rem;
+  font-size: 0.95rem;
 }
 
 .blog-post-content h2 {
@@ -1560,9 +1594,10 @@ p {
 }
 
 .form-group label {
-  font-size: 0.85rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
+  font-family: var(--font-heading);
+  font-size: 0.9rem;
+  font-weight: 400;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
   color: var(--color-charcoal);
 }
@@ -1573,8 +1608,10 @@ p {
   padding: 0.85rem 1rem;
   border: 1px solid var(--color-light-gray);
   border-radius: var(--radius-sm);
-  font-family: var(--font-body);
-  font-size: 1rem;
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 300;
+  letter-spacing: 0.02em;
   color: var(--color-charcoal);
   background: var(--color-white);
   transition: border-color 0.3s ease, box-shadow 0.3s ease;
@@ -1636,8 +1673,9 @@ p {
 }
 
 .contact-detail h4 {
-  font-family: var(--font-body);
-  font-weight: 600;
+  font-family: var(--font-heading);
+  font-weight: 400;
+  letter-spacing: 0.06em;
   margin-bottom: 0.25rem;
 }
 
@@ -1963,9 +2001,10 @@ p {
   left: 50%;
   transform: translateX(-50%);
   color: rgba(255, 255, 255, 0.5);
-  font-size: 0.8rem;
-  font-weight: 500;
-  letter-spacing: 0.1em;
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 400;
+  letter-spacing: 0.15em;
 }
 
 @media (max-width: 768px) {
@@ -2058,10 +2097,10 @@ p {
 
 .footer-links h4 {
   color: var(--color-charcoal);
-  font-family: var(--font-body);
-  font-weight: 600;
-  font-size: 0.85rem;
-  letter-spacing: 0.08em;
+  font-family: var(--font-heading);
+  font-weight: 400;
+  font-size: 0.95rem;
+  letter-spacing: 0.15em;
   text-transform: uppercase;
   margin-bottom: 1rem;
 }
@@ -2084,7 +2123,10 @@ p {
   padding-top: 2rem;
   border-top: 1px solid rgba(58, 58, 58, 0.1);
   text-align: center;
-  font-size: 0.8rem;
+  font-family: var(--font-heading);
+  font-size: 0.85rem;
+  font-weight: 300;
+  letter-spacing: 0.06em;
   color: var(--color-warm-gray);
 }
 
