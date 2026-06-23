@@ -257,6 +257,7 @@ p {
 /* Mobile nav toggle */
 .nav-toggle {
   display: none;
+  flex-direction: column;
   background: none;
   border: none;
   cursor: pointer;
@@ -2219,7 +2220,7 @@ p {
     --section-padding: 3rem 1.25rem;
     --section-padding-lg: 3.5rem 1.25rem;
     --section-padding-sm: 2.5rem 1.25rem;
-    --nav-height: 110px;
+    --nav-height: 130px;
   }
 
   h1 { font-size: clamp(1.8rem, 7vw, 2.6rem); }
@@ -2243,7 +2244,7 @@ p {
   }
 
   .nav-logo img {
-    height: 95px;
+    height: 115px;
   }
 
   /* Hero */
@@ -2559,7 +2560,7 @@ p {
 
 @media (max-width: 480px) {
   :root {
-    --nav-height: 90px;
+    --nav-height: 110px;
   }
 
   h1 { font-size: clamp(1.6rem, 8vw, 2.2rem); }
@@ -2571,7 +2572,7 @@ p {
   }
 
   .nav-logo img {
-    height: 75px;
+    height: 95px;
   }
 
   .hero {
