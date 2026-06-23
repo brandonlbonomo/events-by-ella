@@ -31,7 +31,7 @@
   --section-padding-lg: 8rem 2rem;
   --section-padding-sm: 4rem 2rem;
   --container-max: 1200px;
-  --nav-height: 100px;
+  --nav-height: 140px;
 
   /* Shadows */
   --shadow-subtle: 0 1px 3px rgba(58, 58, 58, 0.04), 0 1px 2px rgba(58, 58, 58, 0.06);
@@ -199,10 +199,8 @@ p {
 }
 
 .nav-logo img {
-  height: 80px;
+  height: 120px;
   width: auto;
-  background: var(--color-cream);
-  mix-blend-mode: multiply;
 }
 
 .nav-links {
@@ -2005,9 +2003,8 @@ p {
 }
 
 .footer-brand .nav-logo img {
-  height: 100px;
+  height: 140px;
   width: auto;
-  mix-blend-mode: multiply;
 }
 
 .footer-brand p {
@@ -2139,7 +2136,7 @@ p {
   }
 
   .nav-logo img {
-    height: 60px;
+    height: 90px;
   }
 
   /* Hero */
