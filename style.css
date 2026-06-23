@@ -31,7 +31,7 @@
   --section-padding-lg: 8rem 2rem;
   --section-padding-sm: 4rem 2rem;
   --container-max: 1200px;
-  --nav-height: 240px;
+  --nav-height: 280px;
 
   /* Shadows */
   --shadow-subtle: 0 1px 3px rgba(58, 58, 58, 0.04), 0 1px 2px rgba(58, 58, 58, 0.06);
@@ -201,7 +201,7 @@ p {
 }
 
 .nav-logo img {
-  height: 220px;
+  height: 260px;
   width: auto;
 }
 
